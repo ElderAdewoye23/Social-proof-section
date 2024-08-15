@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Outfit&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+body{
+    background-image: url(/social-proof-section-master/images/bg-pattern-top-desktop.svg), url(/social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+    font-family: "League Spartan", sans-serif;
+    margin-left: 70px;
+    margin-top: 100px;
+    Font size: 14px
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+   width: 85%;
+   padding-top: 10px;
+   padding-left: 10px;
+   display: flex;
+   align-content: center;
+   justify-content: space-between;
+}
+.first_div{
+    width: 40%;
+    padding: 5px;
+}
+.first_h1{
+    width: 55%;
+    color:hsl(300, 43%, 22%);
+}
+.first_p{
+    color: hsl(303, 10%, 53%);;
+    margin-top: 20px;
+    width: 100%;
+     font-weight: 600; 
+    Font size: 10px;
+}
+.star{
+     width: 55%; 
+     padding: 5px;
+}
+
+.firststar, .secondstar, .thirdstar{
+    margin-top: 20px;
+    display: flex;
+     align-content: center; 
+     gap: 5px;
+     background-color: hsla(333, 80%, 67%, 0.064);
+     padding: 10px;
+     width: 70%;
+}
+ .firststar{
+    margin-left: 80px;
+}
+.secondstar{
+    margin-left:120px;
+}
+.thirdstar{
+    margin-left: 165px;
+} 
+.firststar_p, .secondstar_p, .thirdstar_p{
+    padding-left: 25px;
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.buyers{
+    border-radius: 20px; 
+    width: 40px;
+}
+.secdiv1, .secdiv2, .secdiv3{
+    width: 30%;
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px 15px 30px 15px ;
+    border-radius: 5px;
+    color: white;
+    font-weight: 350;
+    
+}
+.img_p{
+    display: flex;
+    align-content: center; 
+    gap: 10px;
+}
+
+section{
+   
+    width: 85%;
+    padding: 10px 5px 10px 5px;
+    margin-top: 40px;
+display: flex;
+justify-content: space-between;
+}
+.secdiv2{
+   margin-top: 15px;
+}
+.secdiv3{
+    margin-top: 30px;
+}
+.secdiv1_p2, .secdiv2_p2, .secdiv3_p2{
+    text-align: center; 
+    padding-top: 10px;
+    color: hsla(300, 24%, 96%, 0.886);
+}
+span{
+    color: hsl(333, 80%, 67%);
+}
+
+   /* MOBILE DEVICE @MAX-WIDTH:600PX RESPONSIVENESS */
+@media screen and (max-width:600px) {
+    body{
+        margin: 10px 30px 10px 30px;
+    }
+    .container1{
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .first_div{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .first_h1{
+ text-align: center; 
+padding-top: 5px;
+ margin: auto; 
+    }
+
+    .first_p{
+        
+         width: 100%;
+       text-align: center; 
+    }
+
+    .star{
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .firststar, .secondstar, .thirdstar{
+       display: block;
+       width: 100%;
+       margin: auto;
+    }
+    .secondstar, .thirdstar{
+        margin-top: 15px;
+    }
+    section{
+        flex-direction: column;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .secdiv1, .secdiv2, .secdiv3{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+} 
+
+/* TABLET DEVICE RESPONSIVENESS */
+@media screen and (min-width:601px) and (max-width:1020px) {
+    body{
+        margin: 10px 30px 10px 30px;
+    }
+    .container1{
+        width: 100%;
+     }
+     .first_div{
+        width: 45%;
+     }
+     .star{
+        width: 55%; 
+   }
+   .firststar, .secondstar, .thirdstar{
+    width: 80%;
+    display: block;
+   }
+   .firststar{
+    margin-left: 15px;
+}
+.secondstar{
+    margin-left:30px;
+}
+.thirdstar{
+    margin-left: 45px;
+} 
+section{
+width: 100%;
+flex-direction: column;
+margin-top: 30px;
+}
+.secdiv1, .secdiv2, .secdiv3{
+    width: 100%;
+}
+}
+/* DESKTOP RESPONSIVENESS */
+@media screen and (min-width:1024px) {
+    body{
+        margin: 10px 30px 10px 30px;
+    }
+    .container1{
+        width: 100%;
+     }
+    .first_div{
+        width: 35%;
+     }
+     .star{
+        width: 65%; 
+   }
+   section{
+    width: 100%;
+    margin-top: 20px;
+   }
+   .secdiv1, .secdiv2, .secdiv3{
+    width: 32%;
+   }
+}
